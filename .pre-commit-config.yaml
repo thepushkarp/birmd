@@ -1,0 +1,6 @@
+repos:
+    - repo: https://github.com/ambv/black
+      rev: 368f043f138112f63ff521c3481993c589eb7508
+      hooks:
+          - id: black
+            language_version: python3.8
