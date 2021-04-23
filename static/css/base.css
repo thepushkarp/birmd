@@ -1,0 +1,218 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.bg-container {
+    background: -webkit-linear-gradient(
+        -45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        purple,
+        indigo
+    );
+    background-size: 400% 400%;
+    animation: gradient 3s forwards infinite;
+}
+
+.box {
+    position: relative;
+    max-width: 630px;
+    width: 100%;
+    max-height: 420px;
+    height: 100%;
+    background: rgb(238, 238, 238);
+    box-shadow: rgb(0 0 0 / 3%) 0px 0px 4px, rgb(0 0 0 / 12%) 0px 16px 32px,
+        rgb(0 0 0 / 12%) 0px 64px 96px, rgb(0 0 0 / 4%) 0px 96px 128px;
+    border-radius: 30px;
+}
+
+.birmd-name {
+    color: #ff8800;
+    font-size: 24px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ff8800,
+            0 0 8px #ff8800, 0 0 10px #ff8800, 0 0 12px #ff8800,
+            0 0 14px #ff8800;
+    }
+    to {
+        text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 12px #fff, 0 0 10px #fff,
+            0 0 12px #fff, 0 0 14px #fff, 0 0 16px #fff;
+    }
+}
+
+.button {
+    padding: 18px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(203, 152, 0);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 1% 50%;
+    }
+    50% {
+        background-position: 99% 50%;
+    }
+    100% {
+        background-position: 1% 50%;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .box {
+        max-width: 300px;
+        max-height: 480px;
+    }
+
+    .title-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .birmd-name {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 12px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .box {
+        max-width: 420px;
+        max-height: 580px;
+    }
+
+    .title-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .birmd-name {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 18px;
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .box {
+        max-width: 630px;
+    }
+
+    .title-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .birmd-name {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 18px;
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .box {
+        max-width: 630px;
+    }
+
+    .title-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .birmd-name {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 18px;
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .box {
+        max-width: 630px;
+    }
+
+    .title-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .birmd-name {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 18px;
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    /* hi-res laptops and desktops */
+    .box {
+        max-width: 630px;
+    }
+
+    .title-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .birmd-name {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 18px;
+        max-width: 420px;
+    }
+}
