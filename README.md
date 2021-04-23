@@ -6,4 +6,4 @@
 
 ---
 
-Uses Character-based RNNs trained on a the [common names of around 11k birds](https://en.wikipedia.org/wiki/List_of_birds_by_common_name) to generate a new bird name. Wow such awesome!
+Uses Character-based RNNs trained on the [common names of around 11k birds](https://en.wikipedia.org/wiki/List_of_birds_by_common_name) to generate a new bird name. Wow such awesome!
