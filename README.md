@@ -3,9 +3,9 @@
 <h1 align="center">birmd</h1>
 
 <p align="center">
-  <a href="https://lgtm.com/projects/g/thepushkarp/birmd"><img alt="LGTM Grade" src="https://img.shields.io/lgtm/grade/python/github/thepushkarp/birmd?style=for-the-badge"></a>
+  <!-- <a href="https://lgtm.com/projects/g/thepushkarp/birmd"><img alt="LGTM Grade" src="https://img.shields.io/lgtm/grade/python/github/thepushkarp/birmd?style=for-the-badge"></a> -->
   <a href="https://github.com/thepushkarp/birmd/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/thepushkarp/birmd?style=for-the-badge"></a>
-  <a href="https://lgtm.com/projects/g/thepushkarp/birmd"><img alt="LGTM Alerts" src="https://img.shields.io/lgtm/alerts/github/thepushkarp/birmd?style=for-the-badge"></a>
+  <!-- <a href="https://lgtm.com/projects/g/thepushkarp/birmd"><img alt="LGTM Alerts" src="https://img.shields.io/lgtm/alerts/github/thepushkarp/birmd?style=for-the-badge"></a> -->
   <a href="https://github.com/thepushkarp/birmd/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/thepushkarp/birmd?style=for-the-badge"></a>
   <a href="https://github.com/thepushkarp/birmd/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/thepushkarp/birmd?style=for-the-badge"></a>
 </p>
