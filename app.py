@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 from textgenrnn import textgenrnn
-from os import path, walk
+
+# from os import path, walk
 
 app = Flask(__name__)
 
@@ -23,13 +24,13 @@ def get_birmd():
     return jsonify({"birmd_name": birmd_name})
 
 
-if __name__ == "__main__":
-    extra_dirs = ["templates", "static"]
-    extra_files = extra_dirs[:]
-    for extra_dir in extra_dirs:
-        for dirname, dirs, files in walk(extra_dir):
-            for filename in files:
-                filename = path.join(dirname, filename)
-                if path.isfile(filename):
-                    extra_files.append(filename)
-    app.run(extra_files=extra_files, debug=True)
+# if __name__ == "__main__":
+#     extra_dirs = ["templates", "static"]
+#     extra_files = extra_dirs[:]
+#     for extra_dir in extra_dirs:
+#         for dirname, dirs, files in walk(extra_dir):
+#             for filename in files:
+#                 filename = path.join(dirname, filename)
+#                 if path.isfile(filename):
+#                     extra_files.append(filename)
+#     app.run(extra_files=extra_files, debug=True)
