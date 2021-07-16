@@ -1,44 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="static/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <link href="static/favicon.ico" rel="icon" type="image/x-icon">
+        <title>birmd name generator</title>
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="i don't know i'm just a birmd" />
 
-    <title>birmd name generator</title>
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="i don't know i'm just a birmd" />
+        <link
+            href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link href="static/css/base.css" rel="stylesheet" />
+        <link href="http://fonts.cdnfonts.com/css/doge-sans" rel="stylesheet" />
+    </head>
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link href="static/css/base.css" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/doge-sans" rel="stylesheet">
-
-</head>
-
-<body>
-    <div class="bg-container fixed w-full h-full flex flex-col items-center justify-center">
-        <div class="box fixed flex flex-col items-center justify-between py-10">
-            <div class="flex flex-col items-center justify-center">
-                <img src="static/birmd.png" alt="birmd pic" width="150px" class="mb-2" />
-                <h1 class="title-text text-5xl font-bold mb-8">
-                    <span style="color:#dd00cc">such</span> <span style="color:#ff3333">birmd</span> <span
-                        style="color:#22ee22">much</span>
-                    <span style="color:#3333ff">wow!</span>
-                </h1>
+    <body>
+        <div
+            class="
+                bg-container
+                fixed
+                w-full
+                h-full
+                flex flex-col
+                items-center
+                justify-center
+            "
+        >
+            <div
+                class="
+                    box
+                    fixed
+                    flex flex-col
+                    items-center
+                    justify-between
+                    py-10
+                "
+            >
+                <div class="flex flex-col items-center justify-center">
+                    <img
+                        src="static/birmd.png"
+                        alt="birmd pic"
+                        width="150px"
+                        class="mb-2"
+                    />
+                    <h1 class="title-text text-5xl font-bold mb-8">
+                        <span style="color: #dd00cc">such</span>
+                        <span style="color: #ff3333">birmd</span>
+                        <span style="color: #22ee22">much</span>
+                        <span style="color: #3333ff">wow!</span>
+                    </h1>
+                </div>
+                <span id="birmd-name" class="birmd-name font-bold"></span>
+                <form method="GET">
+                    <button class="button" type="submit">
+                        <span class="font-bold">get a new birmd name</span>
+                    </button>
+                </form>
             </div>
-            <span id="birmd-name" class="birmd-name font-bold"></span>
-            <form method="GET">
-                <button class="button" type="submit">
-                    <span class="font-bold">get a new birmd name</span>
-                </button>
-            </form>
+            <footer
+                class="
+                    fixed
+                    inset-x-0
+                    bottom-0
+                    text-center text-white
+                    bg-black bg-opacity-25
+                    text-xs
+                "
+            >
+                wow so cool
+                <a
+                    href="https://github.com/thepushkarp/birmd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >birmd generator</a
+                >
+                created by
+                <a
+                    href="https://thepushkarp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >pushkar patel</a
+                >
+            </footer>
         </div>
-    </div>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/submit.js') }}"></script>
-</body>
-
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery.min.js') }}"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='js/submit.js') }}"
+        ></script>
+    </body>
 </html>
