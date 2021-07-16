@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("form").on("submit", function (event) {
         $.ajax({
             type: "GET",
-            url: "/get_birmd",
+            url: `/get_birmd?temp=${$("#temperature").val()}`,
             dataType: "json",
         }).done(function (data) {
             $("#birmd-name").text(data["birmd_name"]);

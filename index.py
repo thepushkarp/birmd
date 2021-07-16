@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from textgenrnn import textgenrnn
 import os
 
@@ -20,7 +20,10 @@ def home():
 
 @app.route("/get_birmd", methods=["GET"])
 def get_birmd():
-    birmd_name = TEXTGENRNN.generate(return_as_list=True, temperature=1.2)[0]
+    arg_temp = request.args.get("temp")
+    temp = int(arg_temp) / 10 if arg_temp else 1.2
+    print(temp)
+    birmd_name = TEXTGENRNN.generate(return_as_list=True, temperature=temp)[0]
     return jsonify({"birmd_name": birmd_name})
 
 
