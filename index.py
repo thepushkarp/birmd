@@ -1,6 +1,5 @@
 from flask import Flask, render_template, jsonify, request
 from textgenrnn import textgenrnn
-import os
 
 
 app = Flask(__name__)
@@ -28,4 +27,4 @@ def get_birmd():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
