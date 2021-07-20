@@ -26,7 +26,7 @@ Creating and training RNN models is fairly easy with textgenrnn. The architectur
 
 The datatset used for creating the training examples is scraped from [List of birds by common names](https://en.wikipedia.org/wiki/List_of_birds_by_common_name).
 
-# Runnings
+## Running
 
 This only works with Python 3.6 as of now.
 
