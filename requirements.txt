@@ -5,4 +5,4 @@ flask==1.1.2
 textgenrnn==2.0.0
 tensorflow==2.1.0
 keras==2.3.0
-h5py==2.10.0
+h5py==3.6.0
