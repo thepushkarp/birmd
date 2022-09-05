@@ -1,6 +1,6 @@
 selenium==3.141.0
 beautifulsoup4==4.11.1
-black==22.6.0
+black==22.8.0
 flask==1.1.4
 textgenrnn==2.0.0
 tensorflow==2.2.3
